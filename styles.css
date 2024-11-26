@@ -80,6 +80,32 @@ section {
     margin-bottom: 60px;
 }
 
+/* Style for Section Titles */
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Ensures proper alignment */
+    padding-right: 10px; /* Adds space between text and image */
+}
+
+/* Style for the Icon Image */
+.section-icon {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+    object-fit: contain; /* Ensures the image fits within the square */
+    margin-left: 10px; /* Optional: Adds space between text and image */
+}
+
+/* Optional: Hover Effect for the Icon */
+.section-icon:hover {
+    transform: scale(10); /* Enlarges the image */
+    transition: transform 0.2s; /* Smooth transition */
+    position: relative; /* Ensures z-index takes effect */
+    z-index: 9999; /* Places the hovered image on top of others */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow for better visibility */
+}
+
 h2, h3, h4 {
     text-align: center; /* Centered titles */
     margin-bottom: 20px;
