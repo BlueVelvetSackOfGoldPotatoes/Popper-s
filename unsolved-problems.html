@@ -28,6 +28,7 @@
                     <option value="">Select Field</option>
                     <option value="Natural Sciences">Natural Sciences</option>
                     <option value="Formal Sciences">Formal Sciences</option>
+                    <option value="Philosophy">Philosophy</option>
                     <!-- Add more fields as needed -->
                 </select>
 
@@ -833,44 +834,44 @@
     <script>
         // Sample Data Structure for Fields, Subfields, and Problems
         const data = {
-                "Philosophy": {
-                    "Epistemology": [
-                        {
-                            "title": "The Gettier Problem",
-                            "description": "Questioning whether having justified true belief is sufficient for knowledge.",
-                            "citation": "Gettier, E. L. (1963). \"Is Justified True Belief Knowledge?\". Analysis."
-                        },
-                        {
-                            "title": "Problem of Induction",
-                            "description": "Understanding how inductive reasoning justifies beliefs about unobserved phenomena.",
-                            "citation": "Hume, D. (1748). An Enquiry Concerning Human Understanding. Oxford University Press."
-                        }
-                    ],
-                    "Ethics": [
-                        {
-                            "title": "The Trolley Problem",
-                            "description": "Exploring the moral implications of making decisions that affect the lives of others.",
-                            "citation": "Foot, P. (1967). \"The Problem of Abortion and the Doctrine of the Double Effect\". Oxford Review."
-                        },
-                        {
-                            "title": "Moral Relativism vs. Moral Objectivism",
-                            "description": "Debating whether moral principles are universal or culturally dependent.",
-                            "citation": "Mackie, J. L. (1977). Ethics: Inventing Right and Wrong. Penguin."
-                        }
-                    ],
-                    "Philosophy of Mind": [
-                        {
-                            "title": "The Hard Problem of Consciousness",
-                            "description": "Understanding why and how physical processes in the brain give rise to subjective experience.",
-                            "citation": "Chalmers, D. J. (1995). \"Facing Up to the Problem of Consciousness\". Journal of Consciousness Studies."
-                        },
-                        {
-                            "title": "Mind-Body Problem",
-                            "description": "Exploring the relationship between mental states and physical processes.",
-                            "citation": "Descartes, R. (1641). Meditations on First Philosophy. Cambridge University Press."
-                        }
-                    ]
-                },
+            "Philosophy": {
+                "Epistemology": [
+                    {
+                        "title": "The Gettier Problem",
+                        "description": "Questioning whether having justified true belief is sufficient for knowledge.",
+                        "citation": "Gettier, E. L. (1963). \"Is Justified True Belief Knowledge?\". Analysis."
+                    },
+                    {
+                        "title": "Problem of Induction",
+                        "description": "Understanding how inductive reasoning justifies beliefs about unobserved phenomena.",
+                        "citation": "Hume, D. (1748). An Enquiry Concerning Human Understanding. Oxford University Press."
+                    }
+                ],
+                "Ethics": [
+                    {
+                        "title": "The Trolley Problem",
+                        "description": "Exploring the moral implications of making decisions that affect the lives of others.",
+                        "citation": "Foot, P. (1967). \"The Problem of Abortion and the Doctrine of the Double Effect\". Oxford Review."
+                    },
+                    {
+                        "title": "Moral Relativism vs. Moral Objectivism",
+                        "description": "Debating whether moral principles are universal or culturally dependent.",
+                        "citation": "Mackie, J. L. (1977). Ethics: Inventing Right and Wrong. Penguin."
+                    }
+                ],
+                "Philosophy of Mind": [
+                    {
+                        "title": "The Hard Problem of Consciousness",
+                        "description": "Understanding why and how physical processes in the brain give rise to subjective experience.",
+                        "citation": "Chalmers, D. J. (1995). \"Facing Up to the Problem of Consciousness\". Journal of Consciousness Studies."
+                    },
+                    {
+                        "title": "Mind-Body Problem",
+                        "description": "Exploring the relationship between mental states and physical processes.",
+                        "citation": "Descartes, R. (1641). Meditations on First Philosophy. Cambridge University Press."
+                    }
+                ]
+            },
 
             "Natural Sciences": {
                     "Cosmology": [
@@ -909,7 +910,6 @@
                         "description": "Understanding how and why the collapse of the wavefunction occurs during measurement.",
                         "citation": "Von Neumann, J. (1932). Mathematical Foundations of Quantum Mechanics. Princeton University Press."
                     }
-                    // Add more problems as needed
                 ],
                 "Biology": [
                     {
@@ -922,7 +922,6 @@
                         "description": "Identifying the genetic variants that contribute to multifactorial diseases like diabetes and heart disease.",
                         "citation": "Manolio, T. A. (2010). \"Genome-wide association studies and assessment of the risk of disease\". *New England Journal of Medicine*."
                     }
-                    // Add more problems as needed
                 ],
                 "Earth Sciences": [
                     {
@@ -935,7 +934,6 @@
                         "description": "Understanding the origins and driving forces behind plate tectonics.",
                         "citation": "Wilson, J. T. (1967). *Plate Tectonics: An Insider's History of the Modern Theory of the Earth*. Princeton University Press."
                     }
-                    // Add more problems as needed
                 ],
                 "Meteorology": [
                     {
@@ -991,7 +989,6 @@
                 ]
             },
             "Formal Sciences": {
-                "Mathematics": {
                     "Number Theory": [
                         {
                             "title": "Riemann Hypothesis",
@@ -1003,7 +1000,6 @@
                             "description": "Asserting that every even integer greater than two is the sum of two prime numbers.",
                             "citation": "Goldbach, C. (1742). Letter to Euler."
                         }
-                        // Add more problems as needed
                     ],
                     "Topology": [
                         {
@@ -1056,9 +1052,7 @@
                             "description": "Utilizing topological methods to analyze and interpret complex data sets.",
                             "citation": "Carlsson, G. (2009). \"Topology and data\". *Bulletin of the American Mathematical Society*."
                         }
-                    ]
-                },
-                "Computer Science": {
+                    ],
                     "Artificial Intelligence": [
                         {
                             "title": "General AI",
@@ -1070,7 +1064,6 @@
                             "description": "Ensuring that AI systems' goals and behaviors align with human values and intentions.",
                             "citation": "Bostrom, N. (2014). *Superintelligence: Paths, Dangers, Strategies*. Oxford University Press."
                         }
-                        // Add more problems as needed
                     ],
                     "Computational Complexity": [
                         {
@@ -1095,9 +1088,7 @@
                             "description": "Finding efficient algorithms for computing discrete logarithms, crucial for elliptic curve cryptography.",
                             "citation": "Miller, V. S. (1986). \"Use of Elliptic Curves in Cryptography\". Advances in Cryptology—CRYPTO'85."
                         }
-                    ]
-                },
-                "Social Sciences": {
+                    ],
                     "Macroeconomics": [
                         {
                             "title": "Business Cycle Causes",
@@ -1124,9 +1115,7 @@
                     ]
                 }
             
-            }
-            // Add more fields, subfields, and problems as needed
-        };
+            };
 
         const fieldSelect = document.getElementById('fieldSelect');
         const subfieldSelect = document.getElementById('subfieldSelect');
