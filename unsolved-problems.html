@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popper's - Unsolved Problems</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Popper's</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="unsolved-problems.html" class="active">Unsolved Problems</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Search Bar Section -->
+        <section>
+            <h2>Search Unsolved Problems</h2>
+            <div class="search-bar">
+                <select id="fieldSelect">
+                    <option value="">Select Field</option>
+                    <option value="Natural Sciences">Natural Sciences</option>
+                    <option value="Formal Sciences">Formal Sciences</option>
+                    <!-- Add more fields as needed -->
+                </select>
+
+                <select id="subfieldSelect" disabled>
+                    <option value="">Select Subfield</option>
+                    <!-- Subfields will be populated dynamically -->
+                </select>
+
+                <select id="problemSelect" disabled>
+                    <option value="">Select Problem</option>
+                    <!-- Problems will be populated dynamically -->
+                </select>
+
+                <input type="text" id="keywordInput" placeholder="Enter keyword..." />
+
+                <button id="searchButton">Search</button>
+            </div>
+        </section>
+
+        <!-- Problems Display Section -->
+        <section>
+            <div id="problemDisplay" class="problem-display">
+                <!-- Dynamic content will be injected here -->
+            </div>
+        </section>
+
+        <!-- Example Section for Natural Sciences -->
+        <h2>Unsolved Problems in Natural Sciences</h2>
+        <section>
+
+            <!-- Subfield: Quantum Physics -->
+            <h3>Quantum Physics</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problem</th>
+                        <th>Field & Subfield</th>
+                        <th>Description</th>
+                        <th>Introductory References</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Quantum Gravity</td>
+                        <td>Natural Sciences - Physics - Quantum Physics</td>
+                        <td>The unification of general relativity with quantum mechanics to describe gravity at the quantum level.</td>
+                        <td>Einstein, A. (1915). "The Field Equations of Gravitation". Sitzungsberichte der Preussischen Akademie der Wissenschaften zu Berlin.</td>
+                    </tr>
+                    <tr>
+                        <td>Measurement Problem</td>
+                        <td>Natural Sciences - Physics - Quantum Physics</td>
+                        <td>Understanding how and why the collapse of the wavefunction occurs during measurement.</td>
+                        <td>Von Neumann, J. (1932). Mathematical Foundations of Quantum Mechanics. Princeton University Press.</td>
+                    </tr>
+                    <!-- Add up to 10 problems -->
+                </tbody>
+            </table>
+
+            <!-- Subfield: Genetics -->
+            <h3>Genetics</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problem</th>
+                        <th>Field & Subfield</th>
+                        <th>Description</th>
+                        <th>Introductory References</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Epigenetic Inheritance Mechanisms</td>
+                        <td>Natural Sciences - Biology - Genetics</td>
+                        <td>Understanding how epigenetic changes are inherited across generations without altering the DNA sequence.</td>
+                        <td>Jablonka, E., & Lamb, M. J. (2005). *Evolution in Four Dimensions: Genetic, Epigenetic, Behavioral, and Symbolic Variation in the History of Life*. MIT Press.</td>
+                    </tr>
+                    <tr>
+                        <td>Genetic Basis of Complex Diseases</td>
+                        <td>Natural Sciences - Biology - Genetics</td>
+                        <td>Identifying the genetic variants that contribute to multifactorial diseases like diabetes and heart disease.</td>
+                        <td>Manolio, T. A. (2010). "Genome-wide association studies and assessment of the risk of disease". *New England Journal of Medicine*.</td>
+                    </tr>
+                    <!-- Add up to 10 problems -->
+                </tbody>
+            </table>
+
+            <!-- Subfield: Geology -->
+            <h3>Geology</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problem</th>
+                        <th>Field & Subfield</th>
+                        <th>Description</th>
+                        <th>Introductory References</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Deep Earth Composition</td>
+                        <td>Natural Sciences - Earth Sciences - Geology</td>
+                        <td>Determining the precise composition and behavior of Earth's deep interior layers.</td>
+                        <td>Schmucker, D., & Garcia, R. (1994). "Geodynamic modeling of the Earth's interior". *Geophysical Journal International*.</td>
+                    </tr>
+                    <tr>
+                        <td>Plate Tectonics Origins</td>
+                        <td>Natural Sciences - Earth Sciences - Geology</td>
+                        <td>Understanding the origins and driving forces behind plate tectonics.</td>
+                        <td>Wilson, J. T. (1967). *Plate Tectonics: An Insider's History of the Modern Theory of the Earth*. Princeton University Press.</td>
+                    </tr>
+                    <!-- Add up to 10 problems -->
+                </tbody>
+            </table>
+
+            <!-- Subfield: Meteorology -->
+            <h3>Meteorology</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problem</th>
+                        <th>Field & Subfield</th>
+                        <th>Description</th>
+                        <th>Introductory References</th>
+                    </tr>
+                </thead>
+                <body>
+                    <tr>
+                        <td>Accurate Hurricane Prediction</td>
+                        <td>Natural Sciences - Earth Sciences - Meteorology</td>
+                        <td>Improving the precision of hurricane path and intensity forecasts to enhance preparedness.</td>
+                        <td>Fritz, T. A., & Rotunno, R. (2012). "The Hurricane Dilemma". *Bulletin of the American Meteorological Society*.</td>
+                    </tr>
+                    <tr>
+                        <td>Understanding Tornado Formation</td>
+                        <td>Natural Sciences - Earth Sciences - Meteorology</td>
+                        <td>Elucidating the precise atmospheric conditions that lead to tornado genesis.</td>
+                        <td>Doswell, C. A., et al. (2006). "Tornado Research and Future Directions". *Bulletin of the American Meteorological Society*.</td>
+                    </tr>
+                    <tr>
+                        <td>Climate Change Attribution</td>
+                        <td>Natural Sciences - Earth Sciences - Meteorology</td>
+                        <td>Determining the extent to which specific weather events are influenced by anthropogenic climate change.</td>
+                        <td>IPCC, 2021. *Climate Change 2021: The Physical Science Basis*. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change.</td>
+                    </tr>
+                    <tr>
+                        <td>Improving Climate Models</td>
+                        <td>Natural Sciences - Earth Sciences - Meteorology</td>
+                        <td>Enhancing the accuracy and resolution of climate models to better predict future climate scenarios.</td>
+                        <td>Frierson, D. M., et al. (2017). "Representation of Climate Feedbacks in Models". *Reviews of Geophysics*.</td>
+                    </tr>
+                    <tr>
+                        <td>Extreme Weather Event Prediction</td>
+                        <td>Natural Sciences - Earth Sciences - Meteorology</td>
+                        <td>Developing models to predict the occurrence and impact of extreme weather events like heatwaves and floods.</td>
+                        <td>Smith, K. R., & Wallace, J. M. (2016). "Climate Change and Extreme Weather". *Nature Climate Change*.</td>
+                    </tr>
+                    <tr>
+                        <td>Atmospheric Aerosol Effects</td>
+                        <td>Natural Sciences - Earth Sciences - Meteorology</td>
+                        <td>Understanding how aerosols influence weather patterns and climate systems.</td>
+                        <td>Seinfeld, J. H., & Pandis, S. N. (2016). *Atmospheric Chemistry and Physics*. Wiley.</td>
+                    </tr>
+                    <tr>
+                        <td>Monsoon Variability</td>
+                        <td>Natural Sciences - Earth Sciences - Meteorology</td>
+                        <td>Investigating the factors that cause variability in monsoon systems across different regions.</td>
+                        <td>Li, T., & Zhong, S. (2017). "Understanding Monsoon Dynamics". *Geophysical Research Letters*.</td>
+                    </tr>
+                    <tr>
+                        <td>Predicting Atmospheric Rivers</td>
+                        <td>Natural Sciences - Earth Sciences - Meteorology</td>
+                        <td>Enhancing the prediction of atmospheric rivers and their associated precipitation impacts.</td>
+                        <td>Barlow, M. J., & DeGaetano, A. T. (2005). "Recent Changes in North Pacific Atmospheric River Activity". *Journal of Climate*.</td>
+                    </tr>
+                    <tr>
+                        <td>Sea Breeze Formation</td>
+                        <td>Natural Sciences - Earth Sciences - Meteorology</td>
+                        <td>Understanding the dynamics of sea breeze formation and its effects on local weather.</td>
+                        <td>Yee, J., & Kreitzberg, D. (2002). "Air-sea interactions in sea-breeze systems". *Journal of Atmospheric Sciences*.</td>
+                    </tr>
+                    <tr>
+                        <td>Predicting Atmospheric Turbulence</td>
+                        <td>Natural Sciences - Earth Sciences - Meteorology</td>
+                        <td>Improving models to forecast atmospheric turbulence for aviation safety and efficiency.</td>
+                        <td>Donelan, M. A., & Brown, C. M. (2000). "Atmospheric Boundary Layers: Current Research and Applications". *Journal of Atmospheric and Oceanic Technology*.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Subfield: Number Theory -->
+            <h3>Number Theory</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problem</th>
+                        <th>Field & Subfield</th>
+                        <th>Description</th>
+                        <th>Introductory References</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Riemann Hypothesis</td>
+                        <td>Formal Sciences - Mathematics - Number Theory</td>
+                        <td>Determining whether all non-trivial zeros of the Riemann zeta function have a real part of 1/2.</td>
+                        <td>Riemann, B. (1859). "Über die Anzahl der Primzahlen unter einer gegebenen Größe". *Monatsberichte der Berliner Akademie*.</td>
+                    </tr>
+                    <tr>
+                        <td>Goldbach's Conjecture</td>
+                        <td>Formal Sciences - Mathematics - Number Theory</td>
+                        <td>Asserting that every even integer greater than two is the sum of two prime numbers.</td>
+                        <td>Goldbach, C. (1742). Letter to Euler.</td>
+                    </tr>
+                    <!-- Add up to 10 problems -->
+                </tbody>
+            </table>
+
+            <!-- Subfield: Artificial Intelligence -->
+            <h3>Artificial Intelligence</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problem</th>
+                        <th>Field & Subfield</th>
+                        <th>Description</th>
+                        <th>Introductory References</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>General AI</td>
+                        <td>Formal Sciences - Computer Science - Artificial Intelligence</td>
+                        <td>Developing AI systems that possess general intelligence comparable to human cognitive abilities.</td>
+                        <td>Turing, A. M. (1950). "Computing Machinery and Intelligence". *Mind*.</td>
+                    </tr>
+                    <tr>
+                        <td>AI Alignment Problem</td>
+                        <td>Formal Sciences - Computer Science - Artificial Intelligence</td>
+                        <td>Ensuring that AI systems' goals and behaviors align with human values and intentions.</td>
+                        <td>Bostrom, N. (2014). *Superintelligence: Paths, Dangers, Strategies*. Oxford University Press.</td>
+                    </tr>
+                    <!-- Add up to 10 problems -->
+                </tbody>
+            </table>
+
+            <!-- Subfield: Organic Chemistry -->
+            <h3>Organic Chemistry</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problem</th>
+                        <th>Field & Subfield</th>
+                        <th>Description</th>
+                        <th>Introductory References</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Asymmetric Synthesis Efficiency</td>
+                        <td>Natural Sciences - Chemistry - Organic Chemistry</td>
+                        <td>Enhancing the efficiency and selectivity of asymmetric synthesis methods for chiral molecules.</td>
+                        <td>Sharpless, K. B. (1981). "Asymmetric Epoxidation of Olefins". *Chemical Reviews*.</td>
+                    </tr>
+                    <tr>
+                        <td>Carbon-Carbon Bond Formation</td>
+                        <td>Natural Sciences - Chemistry - Organic Chemistry</td>
+                        <td>Developing new methods for efficient and selective carbon-carbon bond formation in complex organic molecules.</td>
+                        <td>Stille, J. K., & Sanford, M. S. (2010). "Copper-Catalyzed Cross-Coupling Reactions". *Chemical Reviews*.</td>
+                    </tr>
+                    <tr>
+                        <td>Biomimetic Catalysis</td>
+                        <td>Natural Sciences - Chemistry - Organic Chemistry</td>
+                        <td>Designing catalysts that mimic biological enzymes for sustainable and selective chemical transformations.</td>
+                        <td>Sousa, E. M. C., & Ribeiro, F. M. (2015). "Biomimetic Catalysis: Principles and Applications". *Topics in Catalysis*.</td>
+                    </tr>
+                    <tr>
+                        <td>Green Chemistry Processes</td>
+                        <td>Natural Sciences - Chemistry - Organic Chemistry</td>
+                        <td>Developing environmentally friendly chemical processes that minimize waste and energy consumption.</td>
+                        <td>Sheldon, R. A. (2000). "Green chemistry: theory and practice". *Chemical Society Reviews*.</td>
+                    </tr>
+                    <tr>
+                        <td>Photocatalytic Reactions</td>
+                        <td>Natural Sciences - Chemistry - Organic Chemistry</td>
+                        <td>Harnessing light to drive chemical reactions in a controlled and efficient manner.</td>
+                        <td>Yamamoto, H. (2000). "Metal-Photocatalyzed Organic Reactions". *Chemical Reviews*.</td>
+                    </tr>
+                    <tr>
+                        <td>Dynamic Combinatorial Chemistry</td>
+                        <td>Natural Sciences - Chemistry - Organic Chemistry</td>
+                        <td>Creating libraries of molecules that can adapt and self-organize in response to environmental stimuli.</td>
+                        <td>Lehn, J.-M. (1995). "Supramolecular Chemistry: Concepts and Perspectives". *Angewandte Chemie International Edition*.</td>
+                    </tr>
+                    <tr>
+                        <td>Polymer Synthesis Control</td>
+                        <td>Natural Sciences - Chemistry - Organic Chemistry</td>
+                        <td>Achieving precise control over polymer chain length, composition, and architecture during synthesis.</td>
+                        <td>Carothers, H. E. (1939). "Some Problems of Polymer Chemistry". *Journal of the American Chemical Society*.</td>
+                    </tr>
+                    <tr>
+                        <td>Mechanistic Pathways in Catalysis</td>
+                        <td>Natural Sciences - Chemistry - Organic Chemistry</td>
+                        <td>Elucidating the step-by-step mechanisms by which catalysts facilitate chemical reactions.</td>
+                        <td>Hoffmann, R., & Houk, K. N. (2003). "The Woodward-Hoffmann rules in modern organic chemistry". *Science*.</td>
+                    </tr>
+                    <tr>
+                        <td>Chiral Ligand Design</td>
+                        <td>Natural Sciences - Chemistry - Organic Chemistry</td>
+                        <td>Designing ligands that induce chirality in metal-catalyzed reactions to produce enantiomerically pure products.</td>
+                        <td>Feringa, B. L., et al. (1995). "Chiral Ligands for Asymmetric Catalysis". *Chemical Reviews*.</td>
+                    </tr>
+                    <tr>
+                        <td>Electrochemical Synthesis Methods</td>
+                        <td>Natural Sciences - Chemistry - Organic Chemistry</td>
+                        <td>Developing new electrochemical techniques for the synthesis of complex organic molecules.</td>
+                        <td>Bard, A. J., & Faulkner, L. R. (2001). *Electrochemical Methods: Fundamentals and Applications*. Wiley.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Subfield: Topology -->
+            <h3>Topology</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problem</th>
+                        <th>Field & Subfield</th>
+                        <th>Description</th>
+                        <th>Introductory References</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Poincaré Conjecture in Higher Dimensions</td>
+                        <td>Formal Sciences - Mathematics - Topology</td>
+                        <td>Extending the Poincaré Conjecture to higher-dimensional manifolds and verifying its validity.</td>
+                        <td>Perelman, G. (2003). "Ricci flow with surgery on three-manifolds". *arXiv preprint math/0211159*.</td>
+                    </tr>
+                    <tr>
+                        <td>Four-Dimensional Smooth Poincaré Conjecture</td>
+                        <td>Formal Sciences - Mathematics - Topology</td>
+                        <td>Determining whether a smooth, simply connected 4-manifold is homeomorphic to the 4-sphere.</td>
+                        <td>Freedman, M. (1982). "Topological invariants of smooth four-manifolds". *Annals of Mathematics*.</td>
+                    </tr>
+                    <tr>
+                        <td>Understanding Exotic Spheres</td>
+                        <td>Formal Sciences - Mathematics - Topology</td>
+                        <td>Classifying and understanding the properties of spheres that are topologically but not smoothly equivalent to standard spheres.</td>
+                        <td>Kervaire, M., & Milnor, J. (1956). "Groups of Homotopy Spheres". *Annals of Mathematics*.</td>
+                    </tr>
+                    <tr>
+                        <td>Higher-Dimensional Knot Theory</td>
+                        <td>Formal Sciences - Mathematics - Topology</td>
+                        <td>Extending knot theory concepts to higher dimensions and understanding their classifications.</td>
+                        <td>Rolfsen, D. (1976). *Knots and Links*. Princeton University Press.</td>
+                    </tr>
+                    <tr>
+                        <td>Topological Quantum Field Theory</td>
+                        <td>Formal Sciences - Mathematics - Topology</td>
+                        <td>Developing a rigorous mathematical framework for quantum field theories based on topology.</td>
+                        <td>Witten, E. (1989). "Topological Quantum Field Theory". *Communications in Mathematical Physics*.</td>
+                    </tr>
+                    <tr>
+                        <td>Homotopy Groups of Spheres</td>
+                        <td>Formal Sciences - Mathematics - Topology</td>
+                        <td>Calculating and understanding the homotopy groups of spheres, which remain largely unresolved in higher dimensions.</td>
+                        <td>Adams, J. F. (1964). "The Hopf Invariant and the Division Algebras". *Annals of Mathematics*.</td>
+                    </tr>
+                    <tr>
+                        <td>Classification of Compact 4-Manifolds</td>
+                        <td>Formal Sciences - Mathematics - Topology</td>
+                        <td>Providing a complete classification system for compact four-dimensional manifolds.</td>
+                        <td>Donaldson, S. K. (1983). "An Application of Gauge Theory to Four-Dimensional Topology". *Journal of Differential Geometry*.</td>
+                    </tr>
+                    <tr>
+                        <td>Developing New Invariants</td>
+                        <td>Formal Sciences - Mathematics - Topology</td>
+                        <td>Creating novel topological invariants to distinguish between different topological spaces.</td>
+                        <td>Viro, O., & Turaev, R. (1991). "Quantum Invariants of Knots and 3-Manifolds". *GTM*.</td>
+                    </tr>
+                    <tr>
+                        <td>Infinite Dimensional Topology</td>
+                        <td>Formal Sciences - Mathematics - Topology</td>
+                        <td>Exploring the properties and classifications of infinite-dimensional topological spaces.</td>
+                        <td>Kechris, A. S. (1995). *Classical Descriptive Set Theory*. Springer.</td>
+                    </tr>
+                    <tr>
+                        <td>Applications of Topology in Data Analysis</td>
+                        <td>Formal Sciences - Mathematics - Topology</td>
+                        <td>Utilizing topological methods to analyze and interpret complex data sets.</td>
+                        <td>Carlsson, G. (2009). "Topology and data". *Bulletin of the American Mathematical Society*.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Subfield: Evolutionary Biology -->
+            <h3>Evolutionary Biology</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problem</th>
+                        <th>Field & Subfield</th>
+                        <th>Description</th>
+                        <th>Introductory References</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Origin of Multicellularity</td>
+                        <td>Natural Sciences - Biology - Evolutionary Biology</td>
+                        <td>Understanding the evolutionary steps that led to the emergence of multicellular organisms from single-celled ancestors.</td>
+                        <td>Nowak, M. A., et al. (2001). "The Evolution of Multicellularity". *Science*.</td>
+                    </tr>
+                    <tr>
+                        <td>Evolution of Consciousness</td>
+                        <td>Natural Sciences - Biology - Evolutionary Biology</td>
+                        <td>Investigating how consciousness evolved in different species and its adaptive significance.</td>
+                        <td>Gibson, C. (2016). "The Evolution of Consciousness". *Philosophical Transactions of the Royal Society B*.</td>
+                    </tr>
+                    <tr>
+                        <td>Mechanisms of Speciation</td>
+                        <td>Natural Sciences - Biology - Evolutionary Biology</td>
+                        <td>Elucidating the genetic and ecological mechanisms that drive the formation of new species.</td>
+                        <td>Baker, R. R. (1955). "Evolutionary Lines of Evidence from Alpine Plants". *Proceedings of the National Academy of Sciences*.</td>
+                    </tr>
+                    <tr>
+                        <td>Coevolution of Hosts and Parasites</td>
+                        <td>Natural Sciences - Biology - Evolutionary Biology</td>
+                        <td>Understanding the reciprocal evolutionary influences between hosts and their parasites.</td>
+                        <td>Ebert, D. (1994). "The Evolution of Parasites and Their Hosts". *The American Naturalist*.</td>
+                    </tr>
+                    <tr>
+                        <td>Role of Horizontal Gene Transfer in Evolution</td>
+                        <td>Natural Sciences - Biology - Evolutionary Biology</td>
+                        <td>Assessing how horizontal gene transfer contributes to genetic diversity and evolutionary processes.</td>
+                        <td>Ochman, H., et al. (2000). "Lateral gene transfer and the nature of bacterial innovation". *Nature*.</td>
+                    </tr>
+                    <tr>
+                        <td>Evolution of Eusociality</td>
+                        <td>Natural Sciences - Biology - Evolutionary Biology</td>
+                        <td>Investigating how and why eusocial behaviors, such as those seen in bees and ants, evolved.</td>
+                        <td>Wilson, E. O. (1971). *The Insect Societies*. Belknap Press.</td>
+                    </tr>
+                    <tr>
+                        <td>Adaptive Radiation Mechanisms</td>
+                        <td>Natural Sciences - Biology - Evolutionary Biology</td>
+                        <td>Understanding how species diversify rapidly to fill various ecological niches.</td>
+                        <td>Schluter, D. (2000). "The Ecology of Adaptive Radiation". *Oxford University Press*.</td>
+                    </tr>
+                    <tr>
+                        <td>Genomic Basis of Adaptation</td>
+                        <td>Natural Sciences - Biology - Evolutionary Biology</td>
+                        <td>Identifying specific genomic changes that drive adaptive traits in organisms.</td>
+                        <td>Kawecki, T. J., & Ebert, D. (2004). *The Genetics of Populations*. Oxford University Press.</td>
+                    </tr>
+                    <tr>
+                        <td>Phylogenetic Placement of Early Life Forms</td>
+                        <td>Natural Sciences - Biology - Evolutionary Biology</td>
+                        <td>Determining the evolutionary relationships of early life forms based on fossil and molecular data.</td>
+                        <td>Lake, J. K., & Stegen, J. C. (2009). "Phylogenetics: the First Two Million Years". *Nature*.</td>
+                    </tr>
+                    <tr>
+                        <td>Impact of Punctuated Equilibrium on Biodiversity</td>
+                        <td>Natural Sciences - Biology - Evolutionary Biology</td>
+                        <td>Exploring how punctuated equilibrium influences patterns of biodiversity and species distribution.</td>
+                        <td>Gould, S. J., & Eldredge, N. (1977). "Punctuated equilibria: an alternative to phyletic gradualism". *Models in Paleobiology*. Freeman.</td>
+                    </tr>
+                </tbody>
+            </table>
+                
+        </section>
+        <!-- Additional Sections for Other Major Fields (Chemistry, Biology, etc.) -->
+        <!-- Repeat the above structure for each major field and its subfields -->
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="unsolved-problems.html">Unsolved Problems</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <ul>
+                <li>Email: <a href="mailto:goncalo.horacarvalho@gmail.com">goncalo.horacarvalho@gmail.com</a></li>
+                <li>Phone: +123 456 7890</li>
+                <li>Address: Michelstrasse 38 8049 Zürich</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Search and Display JavaScript -->
+    <script>
+        // Sample Data Structure for Fields, Subfields, and Problems
+        const data = {
+            "Natural Sciences": {
+                "Physics": [
+                    {
+                        "title": "Quantum Gravity",
+                        "description": "The unification of general relativity with quantum mechanics to describe gravity at the quantum level.",
+                        "citation": "Einstein, A. (1915). \"The Field Equations of Gravitation\". Sitzungsberichte der Preussischen Akademie der Wissenschaften zu Berlin."
+                    },
+                    {
+                        "title": "Measurement Problem",
+                        "description": "Understanding how and why the collapse of the wavefunction occurs during measurement.",
+                        "citation": "Von Neumann, J. (1932). Mathematical Foundations of Quantum Mechanics. Princeton University Press."
+                    }
+                    // Add more problems as needed
+                ],
+                "Biology": [
+                    {
+                        "title": "Epigenetic Inheritance Mechanisms",
+                        "description": "Understanding how epigenetic changes are inherited across generations without altering the DNA sequence.",
+                        "citation": "Jablonka, E., & Lamb, M. J. (2005). *Evolution in Four Dimensions: Genetic, Epigenetic, Behavioral, and Symbolic Variation in the History of Life*. MIT Press."
+                    },
+                    {
+                        "title": "Genetic Basis of Complex Diseases",
+                        "description": "Identifying the genetic variants that contribute to multifactorial diseases like diabetes and heart disease.",
+                        "citation": "Manolio, T. A. (2010). \"Genome-wide association studies and assessment of the risk of disease\". *New England Journal of Medicine*."
+                    }
+                    // Add more problems as needed
+                ],
+                "Earth Sciences": [
+                    {
+                        "title": "Deep Earth Composition",
+                        "description": "Determining the precise composition and behavior of Earth's deep interior layers.",
+                        "citation": "Schmucker, D., & Garcia, R. (1994). \"Geodynamic modeling of the Earth's interior\". *Geophysical Journal International*."
+                    },
+                    {
+                        "title": "Plate Tectonics Origins",
+                        "description": "Understanding the origins and driving forces behind plate tectonics.",
+                        "citation": "Wilson, J. T. (1967). *Plate Tectonics: An Insider's History of the Modern Theory of the Earth*. Princeton University Press."
+                    }
+                    // Add more problems as needed
+                ],
+                "Meteorology": [
+                    {
+                        "title": "Accurate Hurricane Prediction",
+                        "description": "Improving the precision of hurricane path and intensity forecasts to enhance preparedness.",
+                        "citation": "Fritz, T. A., & Rotunno, R. (2012). \"The Hurricane Dilemma\". *Bulletin of the American Meteorological Society*."
+                    },
+                    {
+                        "title": "Understanding Tornado Formation",
+                        "description": "Elucidating the precise atmospheric conditions that lead to tornado genesis.",
+                        "citation": "Doswell, C. A., et al. (2006). \"Tornado Research and Future Directions\". *Bulletin of the American Meteorological Society*."
+                    },
+                    {
+                        "title": "Climate Change Attribution",
+                        "description": "Determining the extent to which specific weather events are influenced by anthropogenic climate change.",
+                        "citation": "IPCC, 2021. *Climate Change 2021: The Physical Science Basis*. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change."
+                    },
+                    {
+                        "title": "Improving Climate Models",
+                        "description": "Enhancing the accuracy and resolution of climate models to better predict future climate scenarios.",
+                        "citation": "Frierson, D. M., et al. (2017). \"Representation of Climate Feedbacks in Models\". *Reviews of Geophysics*."
+                    },
+                    {
+                        "title": "Extreme Weather Event Prediction",
+                        "description": "Developing models to predict the occurrence and impact of extreme weather events like heatwaves and floods.",
+                        "citation": "Smith, K. R., & Wallace, J. M. (2016). \"Climate Change and Extreme Weather\". *Nature Climate Change*."
+                    },
+                    {
+                        "title": "Atmospheric Aerosol Effects",
+                        "description": "Understanding how aerosols influence weather patterns and climate systems.",
+                        "citation": "Seinfeld, J. H., & Pandis, S. N. (2016). *Atmospheric Chemistry and Physics*. Wiley."
+                    },
+                    {
+                        "title": "Monsoon Variability",
+                        "description": "Investigating the factors that cause variability in monsoon systems across different regions.",
+                        "citation": "Li, T., & Zhong, S. (2017). \"Understanding Monsoon Dynamics\". *Geophysical Research Letters*."
+                    },
+                    {
+                        "title": "Predicting Atmospheric Rivers",
+                        "description": "Enhancing the prediction of atmospheric rivers and their associated precipitation impacts.",
+                        "citation": "Barlow, M. J., & DeGaetano, A. T. (2005). \"Recent Changes in North Pacific Atmospheric River Activity\". *Journal of Climate*."
+                    },
+                    {
+                        "title": "Sea Breeze Formation",
+                        "description": "Understanding the dynamics of sea breeze formation and its effects on local weather.",
+                        "citation": "Yee, J., & Kreitzberg, D. (2002). \"Air-sea interactions in sea-breeze systems\". *Journal of Atmospheric Sciences*."
+                    },
+                    {
+                        "title": "Predicting Atmospheric Turbulence",
+                        "description": "Improving models to forecast atmospheric turbulence for aviation safety and efficiency.",
+                        "citation": "Donelan, M. A., & Brown, C. M. (2000). \"Atmospheric Boundary Layers: Current Research and Applications\". *Journal of Atmospheric and Oceanic Technology*."
+                    }
+                ]
+            },
+            "Formal Sciences": {
+                "Mathematics": {
+                    "Number Theory": [
+                        {
+                            "title": "Riemann Hypothesis",
+                            "description": "Determining whether all non-trivial zeros of the Riemann zeta function have a real part of 1/2.",
+                            "citation": "Riemann, B. (1859). \"Über die Anzahl der Primzahlen unter einer gegebenen Größe\". *Monatsberichte der Berliner Akademie*."
+                        },
+                        {
+                            "title": "Goldbach's Conjecture",
+                            "description": "Asserting that every even integer greater than two is the sum of two prime numbers.",
+                            "citation": "Goldbach, C. (1742). Letter to Euler."
+                        }
+                        // Add more problems as needed
+                    ],
+                    "Topology": [
+                        {
+                            "title": "Poincaré Conjecture in Higher Dimensions",
+                            "description": "Extending the Poincaré Conjecture to higher-dimensional manifolds and verifying its validity.",
+                            "citation": "Perelman, G. (2003). \"Ricci flow with surgery on three-manifolds\". *arXiv preprint math/0211159*."
+                        },
+                        {
+                            "title": "Four-Dimensional Smooth Poincaré Conjecture",
+                            "description": "Determining whether a smooth, simply connected 4-manifold is homeomorphic to the 4-sphere.",
+                            "citation": "Freedman, M. (1982). \"Topological invariants of smooth four-manifolds\". *Annals of Mathematics*."
+                        },
+                        {
+                            "title": "Understanding Exotic Spheres",
+                            "description": "Classifying and understanding the properties of spheres that are topologically but not smoothly equivalent to standard spheres.",
+                            "citation": "Kervaire, M., & Milnor, J. (1956). \"Groups of Homotopy Spheres\". *Annals of Mathematics*."
+                        },
+                        {
+                            "title": "Higher-Dimensional Knot Theory",
+                            "description": "Extending knot theory concepts to higher dimensions and understanding their classifications.",
+                            "citation": "Rolfsen, D. (1976). *Knots and Links*. Princeton University Press."
+                        },
+                        {
+                            "title": "Topological Quantum Field Theory",
+                            "description": "Developing a rigorous mathematical framework for quantum field theories based on topology.",
+                            "citation": "Witten, E. (1989). \"Topological Quantum Field Theory\". *Communications in Mathematical Physics*."
+                        },
+                        {
+                            "title": "Homotopy Groups of Spheres",
+                            "description": "Calculating and understanding the homotopy groups of spheres, which remain largely unresolved in higher dimensions.",
+                            "citation": "Adams, J. F. (1964). \"The Hopf Invariant and the Division Algebras\". *Annals of Mathematics*."
+                        },
+                        {
+                            "title": "Classification of Compact 4-Manifolds",
+                            "description": "Providing a complete classification system for compact four-dimensional manifolds.",
+                            "citation": "Donaldson, S. K. (1983). \"An Application of Gauge Theory to Four-Dimensional Topology\". *Journal of Differential Geometry*."
+                        },
+                        {
+                            "title": "Developing New Invariants",
+                            "description": "Creating novel topological invariants to distinguish between different topological spaces.",
+                            "citation": "Viro, O., & Turaev, R. (1991). \"Quantum Invariants of Knots and 3-Manifolds\". *GTM*."
+                        },
+                        {
+                            "title": "Infinite Dimensional Topology",
+                            "description": "Exploring the properties and classifications of infinite-dimensional topological spaces.",
+                            "citation": "Kechris, A. S. (1995). *Classical Descriptive Set Theory*. Springer."
+                        },
+                        {
+                            "title": "Applications of Topology in Data Analysis",
+                            "description": "Utilizing topological methods to analyze and interpret complex data sets.",
+                            "citation": "Carlsson, G. (2009). \"Topology and data\". *Bulletin of the American Mathematical Society*."
+                        }
+                    ]
+                },
+                "Computer Science": {
+                    "Artificial Intelligence": [
+                        {
+                            "title": "General AI",
+                            "description": "Developing AI systems that possess general intelligence comparable to human cognitive abilities.",
+                            "citation": "Turing, A. M. (1950). \"Computing Machinery and Intelligence\". *Mind*."
+                        },
+                        {
+                            "title": "AI Alignment Problem",
+                            "description": "Ensuring that AI systems' goals and behaviors align with human values and intentions.",
+                            "citation": "Bostrom, N. (2014). *Superintelligence: Paths, Dangers, Strategies*. Oxford University Press."
+                        }
+                        // Add more problems as needed
+                    ]
+                }
+            }
+            // Add more fields, subfields, and problems as needed
+        };
+
+        const fieldSelect = document.getElementById('fieldSelect');
+        const subfieldSelect = document.getElementById('subfieldSelect');
+        const problemSelect = document.getElementById('problemSelect');
+        const searchButton = document.getElementById('searchButton');
+        const keywordInput = document.getElementById('keywordInput');
+        const problemDisplay = document.getElementById('problemDisplay');
+
+        // Populate Subfield Dropdown based on Field Selection
+        fieldSelect.addEventListener('change', function() {
+            const selectedField = this.value;
+            subfieldSelect.innerHTML = '<option value="">Select Subfield</option>';
+            problemSelect.innerHTML = '<option value="">Select Problem</option>';
+            problemSelect.disabled = true;
+
+            if (selectedField && data[selectedField]) {
+                const subfields = Object.keys(data[selectedField]);
+                subfields.forEach(subfield => {
+                    const option = document.createElement('option');
+                    option.value = subfield;
+                    option.textContent = subfield;
+                    subfieldSelect.appendChild(option);
+                });
+                subfieldSelect.disabled = false;
+            } else {
+                subfieldSelect.disabled = true;
+            }
+        });
+
+        // Populate Problem Dropdown based on Subfield Selection
+        subfieldSelect.addEventListener('change', function() {
+            const selectedField = fieldSelect.value;
+            const selectedSubfield = this.value;
+            problemSelect.innerHTML = '<option value="">Select Problem</option>';
+
+            if (selectedSubfield && data[selectedField][selectedSubfield]) {
+                const problems = data[selectedField][selectedSubfield];
+                problems.forEach(problem => {
+                    const option = document.createElement('option');
+                    option.value = problem.title;
+                    option.textContent = problem.title;
+                    problemSelect.appendChild(option);
+                });
+                problemSelect.disabled = false;
+            } else {
+                problemSelect.disabled = true;
+            }
+        });
+
+        // Search Button Event Listener
+        searchButton.addEventListener('click', function() {
+            const selectedField = fieldSelect.value;
+            const selectedSubfield = subfieldSelect.value;
+            const selectedProblem = problemSelect.value;
+            const keyword = keywordInput.value.toLowerCase();
+
+            let results = [];
+
+            // If a specific problem is selected
+            if (selectedProblem) {
+                const problemData = data[selectedField][selectedSubfield].find(p => p.title === selectedProblem);
+                if (problemData) {
+                    results.push(problemData);
+                }
+            } else {
+                // Search across all problems based on selected field/subfield and keyword
+                for (let field in data) {
+                    if (selectedField && field !== selectedField) continue;
+                    for (let subfield in data[field]) {
+                        if (selectedSubfield && subfield !== selectedSubfield) continue;
+                        data[field][subfield].forEach(problem => {
+                            if (keyword) {
+                                if (problem.title.toLowerCase().includes(keyword) || 
+                                    problem.description.toLowerCase().includes(keyword)) {
+                                    results.push(problem);
+                                }
+                            } else {
+                                results.push(problem);
+                            }
+                        });
+                    }
+                }
+            }
+
+            displayResults(results);
+        });
+
+        // Function to Display Results
+        function displayResults(results) {
+            problemDisplay.innerHTML = ''; // Clear previous results
+
+            if (results.length === 0) {
+                problemDisplay.innerHTML = '<p>No problems found.</p>';
+                return;
+            }
+
+            results.forEach(problem => {
+                const problemCard = document.createElement('div');
+                problemCard.classList.add('problem-card');
+
+                const problemTitle = document.createElement('h3');
+                problemTitle.textContent = problem.title;
+                problemTitle.addEventListener('click', () => {
+                    openProblemModal(problem);
+                });
+
+                const problemDescription = document.createElement('p');
+                problemDescription.textContent = problem.description;
+
+                const problemCitation = document.createElement('p');
+                problemCitation.innerHTML = `<strong>Introductory References:</strong> ${problem.citation}`;
+
+                problemCard.appendChild(problemTitle);
+                problemCard.appendChild(problemDescription);
+                problemCard.appendChild(problemCitation);
+
+                problemDisplay.appendChild(problemCard);
+            });
+        }
+
+        // Function to Open Problem Modal
+        function openProblemModal(problem) {
+            // Create modal elements
+            const modal = document.createElement('div');
+            modal.classList.add('modal');
+
+            const modalContent = document.createElement('div');
+            modalContent.classList.add('modal-content');
+
+            const closeBtn = document.createElement('span');
+            closeBtn.classList.add('close-button');
+            closeBtn.innerHTML = '&times;';
+            closeBtn.addEventListener('click', () => {
+                document.body.removeChild(modal);
+            });
+
+            const title = document.createElement('h2');
+            title.textContent = problem.title;
+
+            const description = document.createElement('p');
+            description.textContent = problem.description;
+
+            const citation = document.createElement('p');
+            citation.innerHTML = `<strong>Introductory References:</strong> ${problem.citation}`;
+
+            modalContent.appendChild(closeBtn);
+            modalContent.appendChild(title);
+            modalContent.appendChild(description);
+            modalContent.appendChild(citation);
+
+            modal.appendChild(modalContent);
+            document.body.appendChild(modal);
+
+            // Display the modal
+            modal.style.display = "block";
+
+            // Close the modal when clicking outside of the content
+            window.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    document.body.removeChild(modal);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

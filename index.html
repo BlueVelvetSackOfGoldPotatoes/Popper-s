@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popper's - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Popper's</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="unsolved-problems.html">Unsolved Problems</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Introduction Section -->
+        <section>
+            <h2>Welcome to Popper's</h2>
+            <img src="assets/Albert_Einstein_sticks_his_tongue_1951.jpg" alt="Science Image" style="width:100%; max-width:400px; display:block; margin: 20px auto; border-radius: 10px;">
+            <p>At Popper's, we believe that anyone can do science with a meaningful impact. Our mission is to inspire students and their parents by demonstrating that the problems of science are everyone's problems and worthy of your time. As Feynman said, "The pleasure of finding out is universal."</p>
+        </section>
+
+        <!-- Slider Section -->
+        <section>
+            <h2>What Our Community Says</h2>
+            <div class="slider">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="quote">
+                        "Popper's changed the way I see science. It's not just theories; it's about making a real impact!"<br><em>- Oscar, Student</em>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="quote">
+                        "Seeing my child excited about science has been incredible. Popper's is not just an after-school activity, it's a different way of thinking."<br><em>- Sander, Parent</em>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="quote">
+                        "The collaboration opportunities with Universities opened doors to Oscar, my son, that I never imagined."<br><em>- Jeroen, Parent</em>
+                    </div>
+                </div>
+                <!-- Add more slides as needed -->
+
+                <!-- Navigation Buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <!-- Communication Box -->
+<!--         <section>
+            <div class="contact-box">
+                <h3>Contact Us</h3>
+                <form action="mailto:goncalo.horacarvalho@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+w
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section> -->
+    </main>
+
+    <!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="footer-section">
+        <h4>Navigation</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="unsolved-problems.html">Unsolved Problems</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h4>Contact</h4>
+        <ul>
+            <li>Email: <a href="mailto:goncalo.horacarvalho@gmail.com">goncalo.horacarvalho@gmail.com</a></li>
+            <li>Phone: +123 456 7890</li>
+            <li>Address: Michelstrasse 38 8049 Zürich</li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h4>Follow Us</h4>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+    <!-- Slider JavaScript -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "flex"; /* Changed to flex for centering */
+        }
+
+        // Auto-slide functionality (optional)  
+        setInterval(function(){
+            plusSlides(1);
+        }, 10000); // Change slide every 5 seconds
+    </script>
+</body>
+</html>
